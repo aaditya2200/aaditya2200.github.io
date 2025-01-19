@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Data Systems Researcher
+role: Data Systems & AI Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
