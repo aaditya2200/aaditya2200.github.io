@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on Archie</title>
+    <link>http://localhost:1313/archie/tags/tag1/</link>
+    <description>Recent content in Tag1 on Archie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/archie/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/archie/posts/posts/my-first-blog-plot/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archie/posts/posts/my-first-blog-plot/</guid>
+      <description>&lt;p&gt;Hi this is my firsy post&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
