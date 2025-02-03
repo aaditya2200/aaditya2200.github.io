@@ -26,9 +26,16 @@ I am currently **open to new opportunities**! If you have an exciting role that 
 ### 📬 Let’s Connect!  
 If you share any of my interests—or just want to chat—drop me a message!  
 
-### ☕ Buy Me a Coffee 
-If you like my work, you can support me by buying me a coffee! 
-<a href="https://www.buymeacoffee.com/aaditya2200" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px; width: 180px;"> </a>
+### ☕ Buy Me a Coffee  
+If you like my work, you can support me by buying me a coffee!  
+
+<br> <!-- Line break for spacing -->
+
+<a href="https://www.buymeacoffee.com/aaditya2200" target="_blank"> 
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px; width: 180px;">
+</a>
+
+<br> <!-- Line break for spacing -->
 
 🚀 Cheers,  
 **Aadi**
