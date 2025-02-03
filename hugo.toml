@@ -35,7 +35,7 @@ url = "https://x.com/ADR_ad22"
 
 [[menu.main]]
 name = "Home"
-url = "/"
+url = "/about/about/about-me"
 weight = 1
 
 [[menu.main]]
