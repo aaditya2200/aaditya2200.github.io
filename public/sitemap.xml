@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/about/</loc>
+    <loc>https://aaditya2200.github.io/tags/about/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://aaditya2200.github.io/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/about/about-me/</loc>
+    <loc>https://aaditya2200.github.io/about/about/about-me/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://aaditya2200.github.io/about/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/algorithms/</loc>
+    <loc>https://aaditya2200.github.io/tags/algorithms/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/algorithms/</loc>
+    <loc>https://aaditya2200.github.io/algorithms/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/posts/my-first-blog-plot/</loc>
+    <loc>https://aaditya2200.github.io/posts/posts/my-first-blog-plot/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://aaditya2200.github.io/posts/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/algorithms/prefix-sum/</loc>
+    <loc>https://aaditya2200.github.io/algorithms/prefix-sum/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tag1/</loc>
+    <loc>https://aaditya2200.github.io/tags/tag1/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tag2/</loc>
+    <loc>https://aaditya2200.github.io/tags/tag2/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://aaditya2200.github.io/tags/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://aaditya2200.github.io/categories/</loc>
   </url>
 </urlset>
