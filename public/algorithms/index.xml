@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Aaditya</title>
-    <link>https://aaditya2200.github.io/algorithms/</link>
+    <link>http://localhost:1313/algorithms/</link>
     <description>Recent content in Algorithms on Aaditya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Aaditya</copyright>
     <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aaditya2200.github.io/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prefix Sum</title>
-      <link>https://aaditya2200.github.io/algorithms/prefix-sum/</link>
+      <link>http://localhost:1313/algorithms/prefix-sum/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://aaditya2200.github.io/algorithms/prefix-sum/</guid>
+      <guid>http://localhost:1313/algorithms/prefix-sum/</guid>
       <description>&lt;h1 id=&#34;what-kind-of-problems&#34;&gt;What Kind Of Problems?&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;1. Sum of ranges.&#xA;2. Ranges with k-sum&#xA;3. Product of all indices except current.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Refer to [resource](https://leetcode.com/discuss/study-guide/5119937/Prefix-Sum-Problems)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;for practice problems.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;1. Finished basic question 1 [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/). &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

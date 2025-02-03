@@ -3,7 +3,7 @@ title: About Me
 date: 2025-02-02
 tags:
   - about
-draft: false
+draft:
 ---
 
 # Hi, I'm Aaditya 👋  
@@ -27,7 +27,7 @@ I am currently **open to new opportunities**! If you have an exciting role that 
 If you share any of my interests—or just want to chat—drop me a message!  
 
 ### ☕ Buy Me a Coffee 
-If you like my work, you can support me by buying me a coffee!  
+If you like my work, you can support me by buying me a coffee! 
 <a href="https://www.buymeacoffee.com/aaditya2200" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px; width: 180px;"> </a>
 
 🚀 Cheers,  
