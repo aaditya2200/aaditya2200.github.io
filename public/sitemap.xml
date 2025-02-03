@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/archie/</loc>
+    <loc>https://aaditya2200.github.io/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/posts/posts/my-first-blog-plot/</loc>
+    <loc>https://aaditya2200.github.io/posts/posts/my-first-blog-plot/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/posts/</loc>
+    <loc>https://aaditya2200.github.io/posts/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/tags/tag1/</loc>
+    <loc>https://aaditya2200.github.io/tags/tag1/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/tags/tag2/</loc>
+    <loc>https://aaditya2200.github.io/tags/tag2/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/tags/</loc>
+    <loc>https://aaditya2200.github.io/tags/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archie/categories/</loc>
+    <loc>https://aaditya2200.github.io/categories/</loc>
   </url>
 </urlset>

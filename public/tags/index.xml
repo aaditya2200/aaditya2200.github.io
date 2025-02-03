@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Archie</title>
-    <link>http://localhost:1313/archie/tags/</link>
-    <description>Recent content in Tags on Archie</description>
+    <title>Tags on Aaditya</title>
+    <link>https://aaditya2200.github.io/tags/</link>
+    <description>Recent content in Tags on Aaditya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Athul</copyright>
+    <copyright>© Aaditya</copyright>
     <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/archie/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aaditya2200.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag1</title>
-      <link>http://localhost:1313/archie/tags/tag1/</link>
+      <link>https://aaditya2200.github.io/tags/tag1/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/tags/tag1/</guid>
+      <guid>https://aaditya2200.github.io/tags/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
-      <link>http://localhost:1313/archie/tags/tag2/</link>
+      <link>https://aaditya2200.github.io/tags/tag2/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/tags/tag2/</guid>
+      <guid>https://aaditya2200.github.io/tags/tag2/</guid>
       <description></description>
     </item>
   </channel>

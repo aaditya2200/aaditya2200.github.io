@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archie</title>
-    <link>http://localhost:1313/archie/</link>
-    <description>Recent content on Archie</description>
+    <title>Aaditya</title>
+    <link>https://aaditya2200.github.io/</link>
+    <description>Recent content on Aaditya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Athul</copyright>
+    <copyright>© Aaditya</copyright>
     <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/archie/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aaditya2200.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/archie/posts/posts/my-first-blog-plot/</link>
+      <link>https://aaditya2200.github.io/posts/posts/my-first-blog-plot/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archie/posts/posts/my-first-blog-plot/</guid>
+      <guid>https://aaditya2200.github.io/posts/posts/my-first-blog-plot/</guid>
       <description>&lt;p&gt;Hi this is my firsy post&lt;/p&gt;</description>
     </item>
   </channel>
