@@ -1,5 +1,5 @@
 ---
-title: "Algorithmic Progress"
+title: "Prefix Sum"
 date: 2025-02-02
 draft: false
 tags:
