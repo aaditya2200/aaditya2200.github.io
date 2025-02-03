@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aaditya</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Aaditya</description>
+    <title>About on Aaditya</title>
+    <link>http://localhost:1313/tags/about/</link>
+    <description>Recent content in About on Aaditya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Aaditya</copyright>
     <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/about/about-me/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/about/about-me/</guid>
       <description>&lt;h1 id=&#34;hi-im-aaditya-&#34;&gt;Hi, I&amp;rsquo;m Aaditya 👋&lt;/h1&gt;&#xA;&lt;p&gt;(Pronounced &lt;strong&gt;Ah-di-ti-ya&lt;/strong&gt;—but you can call me &lt;strong&gt;Aadi&lt;/strong&gt; if that&amp;rsquo;s easier!)&lt;/p&gt;&#xA;&lt;p&gt;I love &lt;strong&gt;building cool things with open-source technologies&lt;/strong&gt;. My primary interests are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;High-performance databases&lt;/strong&gt; 🏎️&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Leveraging AI for better consumer products&lt;/strong&gt; 🧠✨&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Computer science research in my spare time&lt;/strong&gt; 📖&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Beyond tech, I enjoy &lt;strong&gt;skiing and hiking&lt;/strong&gt; in the mountains near &lt;strong&gt;Salt Lake City&lt;/strong&gt; 🏔️⛷️.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-looking-for-new-roles&#34;&gt;💡 Looking for New Roles&lt;/h2&gt;&#xA;&lt;p&gt;I am currently &lt;strong&gt;open to new opportunities&lt;/strong&gt;! If you have an exciting role that aligns with my interests, feel free to &lt;strong&gt;reach out&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/posts/my-first-blog-plot/</link>
-      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/posts/my-first-blog-plot/</guid>
-      <description>&lt;p&gt;Hi this is my firsy post&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
