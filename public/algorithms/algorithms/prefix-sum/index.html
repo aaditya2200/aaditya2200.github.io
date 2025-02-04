@@ -66,13 +66,69 @@ Why does this work? 🤔
 
 
 This was pretty tough to understand, but once I did, it was relatively straightforward.
+
+
+974. Subarray Sums Divisible by K
+
+
+This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k.
+The formula: sum = (((sum &#43; item) % k) &#43; k)%k is important to avoid negative reminders.
+
+
+1497. Check If Array Pairs Are Divisible by k
+
+
+This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false.
+If the number of 0 remainders is not even, the answer is false. Why? Well, it&rsquo;s simple. lets say k = 7, and we have two number 7 and 21. If the sum of these 2 numbers is divisible by k, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists.
+
+
+1590. Make Sum Divisible by P
+
+
+This was tricky. The main idea is as follows:
+
+We find the total sum, and check if it is divisible by p. if it is, return 0.
+Else, we need to find the subarray which sums up to total sum % p
+Now, we compute prefix sum. For each element, we find pref % p.
+We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is target = (curr - rem &#43; p) % p.
+If found in map, update lengths.
+
+
+
+
+523. Continuous Subarray Sum
+
+
+I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map.
+
+
+2575. Find the Divisibility Array of a String
+
+
+This was easy. But there is a formula I should use: new_rem = (old_rem * 10 &#43; digit) % m
+
+
+2845. Count of Interesting Subarrays
+
+
+Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map.
+
+
+1442. Count Triplets That Can Form Two Arrays of Equal XOR
+
+
+Use this math formula to understand whats going on.
+
+prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i]
+prefix[j] ..... prefix[k] = prefix[k &#43; 1] ^ prefix[j]
+equating both and eliminating prefix[j]
 " />
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content="http://localhost:1313/algorithms/algorithms/prefix-sum/">
   <meta property="og:site_name" content="Aaditya">
   <meta property="og:title" content="Prefix Sum">
   <meta property="og:description" content="What Kind Of Problems? Sum of ranges. Ranges with k-sum. Product of all indices except current. Refer to resource for practice problems.
-Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This problem is interesting. We keep track of the frequency of the prefix sums in a map. 1310. XOR Queries of a Subarray This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices. 2559. Count Vowel Strings in Ranges This threw me off at first, but after looking at it for a minute, realized it’s nothing fancy. 325. Maximum Size Subarray Sum Equals k This is a variation of the standard pattern. You store index instead of frequency. 1248. Count Number of Nice Subarrays Fumbled a little bit here. Found two ways to solve this. Convert the array into 0 and 1 for even and odd. Keep track of counts in a map and update when count - k is found. 930. Binary Subarrays With Sum Same as above. However, surprisingly not the fastest in LeetCode. 2364. Count Number of Bad Pairs Need to revisit. The logic is as follows: Total pairs is n * (n - 1) / 2. For each number in the list, compute i - nums[i]. Subtract the map value for this index from total pairs. Increment map value. Why does this work? 🤔 1658. Minimum Operations to Reduce X to Zero This was pretty tough to understand, but once I did, it was relatively straightforward.">
+Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This problem is interesting. We keep track of the frequency of the prefix sums in a map. 1310. XOR Queries of a Subarray This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices. 2559. Count Vowel Strings in Ranges This threw me off at first, but after looking at it for a minute, realized it’s nothing fancy. 325. Maximum Size Subarray Sum Equals k This is a variation of the standard pattern. You store index instead of frequency. 1248. Count Number of Nice Subarrays Fumbled a little bit here. Found two ways to solve this. Convert the array into 0 and 1 for even and odd. Keep track of counts in a map and update when count - k is found. 930. Binary Subarrays With Sum Same as above. However, surprisingly not the fastest in LeetCode. 2364. Count Number of Bad Pairs Need to revisit. The logic is as follows: Total pairs is n * (n - 1) / 2. For each number in the list, compute i - nums[i]. Subtract the map value for this index from total pairs. Increment map value. Why does this work? 🤔 1658. Minimum Operations to Reduce X to Zero This was pretty tough to understand, but once I did, it was relatively straightforward. 974. Subarray Sums Divisible by K This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k. The formula: sum = (((sum &#43; item) % k) &#43; k)%k is important to avoid negative reminders. 1497. Check If Array Pairs Are Divisible by k This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false. If the number of 0 remainders is not even, the answer is false. Why? Well, it’s simple. lets say k = 7, and we have two number 7 and 21. If the sum of these 2 numbers is divisible by k, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists. 1590. Make Sum Divisible by P This was tricky. The main idea is as follows: We find the total sum, and check if it is divisible by p. if it is, return 0. Else, we need to find the subarray which sums up to total sum % p Now, we compute prefix sum. For each element, we find pref % p. We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is target = (curr - rem &#43; p) % p. If found in map, update lengths. 523. Continuous Subarray Sum I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map. 2575. Find the Divisibility Array of a String This was easy. But there is a formula I should use: new_rem = (old_rem * 10 &#43; digit) % m 2845. Count of Interesting Subarrays Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map. 1442. Count Triplets That Can Form Two Arrays of Equal XOR Use this math formula to understand whats going on. prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i] prefix[j] ..... prefix[k] = prefix[k &#43; 1] ^ prefix[j] equating both and eliminating prefix[j]">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="algorithms">
@@ -83,7 +139,7 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Prefix Sum">
   <meta name="twitter:description" content="What Kind Of Problems? Sum of ranges. Ranges with k-sum. Product of all indices except current. Refer to resource for practice problems.
-Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This problem is interesting. We keep track of the frequency of the prefix sums in a map. 1310. XOR Queries of a Subarray This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices. 2559. Count Vowel Strings in Ranges This threw me off at first, but after looking at it for a minute, realized it’s nothing fancy. 325. Maximum Size Subarray Sum Equals k This is a variation of the standard pattern. You store index instead of frequency. 1248. Count Number of Nice Subarrays Fumbled a little bit here. Found two ways to solve this. Convert the array into 0 and 1 for even and odd. Keep track of counts in a map and update when count - k is found. 930. Binary Subarrays With Sum Same as above. However, surprisingly not the fastest in LeetCode. 2364. Count Number of Bad Pairs Need to revisit. The logic is as follows: Total pairs is n * (n - 1) / 2. For each number in the list, compute i - nums[i]. Subtract the map value for this index from total pairs. Increment map value. Why does this work? 🤔 1658. Minimum Operations to Reduce X to Zero This was pretty tough to understand, but once I did, it was relatively straightforward.">
+Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This problem is interesting. We keep track of the frequency of the prefix sums in a map. 1310. XOR Queries of a Subarray This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices. 2559. Count Vowel Strings in Ranges This threw me off at first, but after looking at it for a minute, realized it’s nothing fancy. 325. Maximum Size Subarray Sum Equals k This is a variation of the standard pattern. You store index instead of frequency. 1248. Count Number of Nice Subarrays Fumbled a little bit here. Found two ways to solve this. Convert the array into 0 and 1 for even and odd. Keep track of counts in a map and update when count - k is found. 930. Binary Subarrays With Sum Same as above. However, surprisingly not the fastest in LeetCode. 2364. Count Number of Bad Pairs Need to revisit. The logic is as follows: Total pairs is n * (n - 1) / 2. For each number in the list, compute i - nums[i]. Subtract the map value for this index from total pairs. Increment map value. Why does this work? 🤔 1658. Minimum Operations to Reduce X to Zero This was pretty tough to understand, but once I did, it was relatively straightforward. 974. Subarray Sums Divisible by K This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k. The formula: sum = (((sum &#43; item) % k) &#43; k)%k is important to avoid negative reminders. 1497. Check If Array Pairs Are Divisible by k This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false. If the number of 0 remainders is not even, the answer is false. Why? Well, it’s simple. lets say k = 7, and we have two number 7 and 21. If the sum of these 2 numbers is divisible by k, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists. 1590. Make Sum Divisible by P This was tricky. The main idea is as follows: We find the total sum, and check if it is divisible by p. if it is, return 0. Else, we need to find the subarray which sums up to total sum % p Now, we compute prefix sum. For each element, we find pref % p. We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is target = (curr - rem &#43; p) % p. If found in map, update lengths. 523. Continuous Subarray Sum I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map. 2575. Find the Divisibility Array of a String This was easy. But there is a formula I should use: new_rem = (old_rem * 10 &#43; digit) % m 2845. Count of Interesting Subarrays Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map. 1442. Count Triplets That Can Form Two Arrays of Equal XOR Use this math formula to understand whats going on. prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i] prefix[j] ..... prefix[k] = prefix[k &#43; 1] ^ prefix[j] equating both and eliminating prefix[j]">
 
         <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
@@ -215,7 +271,62 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
 <ul>
 <li>This was pretty tough to understand, but once I did, it was relatively straightforward.</li>
 </ul>
-
+<ol start="13">
+<li><a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/">974. Subarray Sums Divisible by K</a></li>
+</ol>
+<ul>
+<li>This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k.</li>
+<li>The formula: <code>sum = (((sum + item) % k) + k)%k</code> is important to avoid negative reminders.</li>
+</ul>
+<ol start="14">
+<li><a href="https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/">1497. Check If Array Pairs Are Divisible by k</a></li>
+</ol>
+<ul>
+<li>This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false.</li>
+<li>If the number of 0 remainders is not even, the answer is false. Why? Well, it&rsquo;s simple. lets say <code>k = 7</code>, and we have two number <code>7</code> and <code>21</code>. If the sum of these 2 numbers is divisible by <code>k</code>, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists.</li>
+</ul>
+<ol start="15">
+<li><a href="https://leetcode.com/problems/make-sum-divisible-by-p/description/">1590. Make Sum Divisible by P</a></li>
+</ol>
+<ul>
+<li>This was tricky. The main idea is as follows:
+<ul>
+<li>We find the total sum, and check if it is divisible by p. if it is, return 0.</li>
+<li>Else, we need to find the subarray which sums up to <code>total sum % p</code></li>
+<li>Now, we compute prefix sum. For each element, we find <code>pref % p</code>.</li>
+<li>We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is <code>target = (curr - rem + p) % p</code>.</li>
+<li>If found in map, update lengths.</li>
+</ul>
+</li>
+</ul>
+<ol start="16">
+<li><a href="https://leetcode.com/problems/continuous-subarray-sum/">523. Continuous Subarray Sum</a></li>
+</ol>
+<ul>
+<li>I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map.</li>
+</ul>
+<ol start="17">
+<li><a href="https://leetcode.com/problems/find-the-divisibility-array-of-a-string/description/">2575. Find the Divisibility Array of a String</a></li>
+</ol>
+<ul>
+<li>This was easy. But there is a formula I should use: <code>new_rem = (old_rem * 10 + digit) % m</code></li>
+</ul>
+<ol start="18">
+<li><a href="https://leetcode.com/problems/count-of-interesting-subarrays/description/">2845. Count of Interesting Subarrays</a></li>
+</ol>
+<ul>
+<li>Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map.</li>
+</ul>
+<ol start="19">
+<li><a href="https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/">1442. Count Triplets That Can Form Two Arrays of Equal XOR</a></li>
+</ol>
+<ul>
+<li>Use this math formula to understand whats going on.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i]
+</span></span><span style="display:flex;"><span>prefix[j] ..... prefix[k] = prefix[k + 1] ^ prefix[j]
+</span></span><span style="display:flex;"><span>equating both and eliminating prefix[j]
+</span></span></code></pre></div>
         </section>
         <div class="post-tags">
           

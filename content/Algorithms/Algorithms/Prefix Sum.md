@@ -37,4 +37,35 @@ Refer to [resource](https://leetcode.com/discuss/study-guide/5119937/Prefix-Sum-
      4. Increment map value.  
    - Why does this work? 🤔  
 12. [1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)  
-   - This was pretty tough to understand, but once I did, it was relatively straightforward.  
+   - This was pretty tough to understand, but once I did, it was relatively straightforward. 
+13. [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
+   - This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k.
+   - The formula: `sum = (((sum + item) % k) + k)%k` is important to avoid negative reminders.
+14. [1497. Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/) 
+   - This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false.
+   - If the number of 0 remainders is not even, the answer is false. Why? Well, it's simple. lets say `k = 7`, and we have two number `7` and `21`. If the sum of these 2 numbers is divisible by `k`, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists.
+15. [1590. Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description/)
+   - This was tricky. The main idea is as follows:
+     - We find the total sum, and check if it is divisible by p. if it is, return 0. 
+     - Else, we need to find the subarray which sums up to `total sum % p`
+     - Now, we compute prefix sum. For each element, we find `pref % p`.
+     - We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is `target = (curr - rem + p) % p`.
+     - If found in map, update lengths.
+16. [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
+   -  I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map.
+17. [2575. Find the Divisibility Array of a String](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/description/)
+   - This was easy. But there is a formula I should use: `new_rem = (old_rem * 10 + digit) % m`
+18.  [2845. Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/description/)
+   -  Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map.
+19. [1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
+   - Use this math formula to understand whats going on.
+```
+prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i]
+prefix[j] ..... prefix[k] = prefix[k + 1] ^ prefix[j]
+equating both and eliminating prefix[j]
+```
+
+
+
+
+
