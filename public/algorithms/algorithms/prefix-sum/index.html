@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Prefix Sum - Aaditya</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="What Kind Of Problems?
@@ -124,7 +124,7 @@ prefix[j] ..... prefix[k] = prefix[k &#43; 1] ^ prefix[j]
 equating both and eliminating prefix[j]
 " />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="http://localhost:1313/algorithms/algorithms/prefix-sum/">
+	<meta property="og:url" content="https://aaditya2200.github.io/algorithms/algorithms/prefix-sum/">
   <meta property="og:site_name" content="Aaditya">
   <meta property="og:title" content="Prefix Sum">
   <meta property="og:description" content="What Kind Of Problems? Sum of ranges. Ranges with k-sum. Product of all indices except current. Refer to resource for practice problems.
@@ -141,13 +141,13 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
   <meta name="twitter:description" content="What Kind Of Problems? Sum of ranges. Ranges with k-sum. Product of all indices except current. Refer to resource for practice problems.
 Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This problem is interesting. We keep track of the frequency of the prefix sums in a map. 1310. XOR Queries of a Subarray This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices. 2559. Count Vowel Strings in Ranges This threw me off at first, but after looking at it for a minute, realized it’s nothing fancy. 325. Maximum Size Subarray Sum Equals k This is a variation of the standard pattern. You store index instead of frequency. 1248. Count Number of Nice Subarrays Fumbled a little bit here. Found two ways to solve this. Convert the array into 0 and 1 for even and odd. Keep track of counts in a map and update when count - k is found. 930. Binary Subarrays With Sum Same as above. However, surprisingly not the fastest in LeetCode. 2364. Count Number of Bad Pairs Need to revisit. The logic is as follows: Total pairs is n * (n - 1) / 2. For each number in the list, compute i - nums[i]. Subtract the map value for this index from total pairs. Increment map value. Why does this work? 🤔 1658. Minimum Operations to Reduce X to Zero This was pretty tough to understand, but once I did, it was relatively straightforward. 974. Subarray Sums Divisible by K This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k. The formula: sum = (((sum &#43; item) % k) &#43; k)%k is important to avoid negative reminders. 1497. Check If Array Pairs Are Divisible by k This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false. If the number of 0 remainders is not even, the answer is false. Why? Well, it’s simple. lets say k = 7, and we have two number 7 and 21. If the sum of these 2 numbers is divisible by k, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists. 1590. Make Sum Divisible by P This was tricky. The main idea is as follows: We find the total sum, and check if it is divisible by p. if it is, return 0. Else, we need to find the subarray which sums up to total sum % p Now, we compute prefix sum. For each element, we find pref % p. We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is target = (curr - rem &#43; p) % p. If found in map, update lengths. 523. Continuous Subarray Sum I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map. 2575. Find the Divisibility Array of a String This was easy. But there is a formula I should use: new_rem = (old_rem * 10 &#43; digit) % m 2845. Count of Interesting Subarrays Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map. 1442. Count Triplets That Can Form Two Arrays of Equal XOR Use this math formula to understand whats going on. prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i] prefix[j] ..... prefix[k] = prefix[k &#43; 1] ^ prefix[j] equating both and eliminating prefix[j]">
 
-        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+        <link href="https://aaditya2200.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
-		src="http://localhost:1313/js/MathJax.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://aaditya2200.github.io/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://aaditya2200.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="https://aaditya2200.github.io/js/MathJax.js"></script>
 		
 		<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -161,9 +161,9 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
 						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
 			}
 		});
-		</script><link rel="stylesheet" href="http://localhost:1313/katex/katex.min.css ">
-		<script defer src="http://localhost:1313/katex/katex.min.js"></script>
-		<script defer src="http://localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		</script><link rel="stylesheet" href="https://aaditya2200.github.io/katex/katex.min.css ">
+		<script defer src="https://aaditya2200.github.io/katex/katex.min.js"></script>
+		<script defer src="https://aaditya2200.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
@@ -179,7 +179,7 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://localhost:1313/">Aaditya</a>
+		<a href="https://aaditya2200.github.io/">Aaditya</a>
 	</div>
 	<nav>
 		
@@ -360,6 +360,8 @@ Progress 303. Range Sum Query - Immutable 560. Subarray Sum Equals K This proble
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
+
+
 
 </div>
     </body>

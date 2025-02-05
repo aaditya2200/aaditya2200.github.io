@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tries - Aaditya</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Tries
+When to use?
+
+To find common prefixes.
+To verify existence of words within a set of strings
+
+In real world systems, tries are used in autocomplete.
+Types of problems
+
+Implementation of trie
+Wildcard search
+Find all words on a board
+
+Please use this resource for practice.
+Problems
+
+Trie Implementation
+
+Use a map to store pointers from ch to TrieNode
+Improvement: use a TrieNode* array of 26 length. Access each char by subtracting a from it.
+
+
+Wildcard Search
+
+Be careful. The base case for recursion should be when index == word.size() this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of size - 1 fails. Remember that the root is essentially a dummy node.
+
+
+Word Search 2
+
+This is a bit tricky. The idea is simple, but the implementation is tricky
+
+
+Prefix Suffix Search
+
+Straightforward. Insert all prefixes and suffixed. For example, for apple, we insert a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple etc.
+Maintain index of the word as you encounter them. apple would have index 0.
+Maybe dont even need prefix
+
+
+" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://aaditya2200.github.io/algorithms/algorithms/tries/">
+  <meta property="og:site_name" content="Aaditya">
+  <meta property="og:title" content="Tries">
+  <meta property="og:description" content="Tries When to use?
+To find common prefixes. To verify existence of words within a set of strings In real world systems, tries are used in autocomplete.
+Types of problems Implementation of trie Wildcard search Find all words on a board Please use this resource for practice.
+Problems Trie Implementation Use a map to store pointers from ch to TrieNode Improvement: use a TrieNode* array of 26 length. Access each char by subtracting a from it. Wildcard Search Be careful. The base case for recursion should be when index == word.size() this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of size - 1 fails. Remember that the root is essentially a dummy node. Word Search 2 This is a bit tricky. The idea is simple, but the implementation is tricky Prefix Suffix Search Straightforward. Insert all prefixes and suffixed. For example, for apple, we insert a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple etc. Maintain index of the word as you encounter them. apple would have index 0. Maybe dont even need prefix">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="algorithms">
+    <meta property="article:published_time" content="2025-02-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-04T00:00:00+00:00">
+    <meta property="article:tag" content="Algorithms">
+    <meta property="article:tag" content="Tries">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tries">
+  <meta name="twitter:description" content="Tries When to use?
+To find common prefixes. To verify existence of words within a set of strings In real world systems, tries are used in autocomplete.
+Types of problems Implementation of trie Wildcard search Find all words on a board Please use this resource for practice.
+Problems Trie Implementation Use a map to store pointers from ch to TrieNode Improvement: use a TrieNode* array of 26 length. Access each char by subtracting a from it. Wildcard Search Be careful. The base case for recursion should be when index == word.size() this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of size - 1 fails. Remember that the root is essentially a dummy node. Word Search 2 This is a bit tricky. The idea is simple, but the implementation is tricky Prefix Suffix Search Straightforward. Insert all prefixes and suffixed. For example, for apple, we insert a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple etc. Maintain index of the word as you encounter them. apple would have index 0. Maybe dont even need prefix">
+
+        <link href="https://aaditya2200.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://aaditya2200.github.io/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://aaditya2200.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="https://aaditya2200.github.io/js/MathJax.js"></script>
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script><link rel="stylesheet" href="https://aaditya2200.github.io/katex/katex.min.css ">
+		<script defer src="https://aaditya2200.github.io/katex/katex.min.js"></script>
+		<script defer src="https://aaditya2200.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+		</script>
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://aaditya2200.github.io/">Aaditya</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">Posts</a>
+		
+		<a href="/algorithms">Algorithms</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Tries</h1>
+          <div class="meta">Posted on Feb 4, 2025</div>
+        </div>
+        
+        <section class="body">
+          <h2 id="tries">Tries</h2>
+<p><strong>When to use?</strong></p>
+<ol>
+<li>To find common prefixes.</li>
+<li>To verify existence of words within a set of strings</li>
+</ol>
+<p><strong>In real world systems, tries are used in autocomplete</strong>.</p>
+<h2 id="types-of-problems">Types of problems</h2>
+<ol>
+<li>Implementation of trie</li>
+<li>Wildcard search</li>
+<li>Find all words on a board</li>
+</ol>
+<p><strong>Please use this <a href="https://leetcode.com/discuss/general-discussion/853098/trie-or-search-related-question-and-good-explanation">resource</a> for practice.</strong></p>
+<h3 id="problems">Problems</h3>
+<ol>
+<li><a href="https://leetcode.com/problems/implement-trie-prefix-tree">Trie Implementation</a>
+<ul>
+<li>Use a map to store pointers from ch to TrieNode</li>
+<li><strong>Improvement</strong>: use a <code>TrieNode*</code> array of 26 length. Access each char by subtracting <code>a</code> from it.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/">Wildcard Search</a>
+<ul>
+<li>Be careful. The base case for recursion should be when <code>index == word.size()</code> this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of <code>size - 1</code> fails. Remember that the root is essentially a dummy node.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/word-search-ii/">Word Search 2</a>
+<ul>
+<li>This is a bit tricky. The idea is simple, but the implementation is tricky</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/prefix-and-suffix-search/">Prefix Suffix Search</a>
+<ul>
+<li>Straightforward. Insert all prefixes and suffixed. For example, for <code>apple</code>, we insert <code>a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple</code> etc.</li>
+<li>Maintain index of the word as you encounter them. <code>apple</code> would have index 0.</li>
+<li>Maybe dont even need prefix</li>
+</ul>
+</li>
+</ol>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/algorithms">algorithms</a></li>
+              
+              <li><a href="/tags/tries">tries</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/aaditya2200" rel="me" title="GitHub"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+</svg></a><a class="border"></a><a class="soc" href="https://x.com/ADR_ad22" rel="me" title="Twitter"><svg class="feather">
+   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#twitter" />
+</svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2025  © Aaditya |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+
+</div>
+    </body>
+</html>

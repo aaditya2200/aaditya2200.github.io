@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tries on Aaditya</title>
+    <link>https://aaditya2200.github.io/tags/tries/</link>
+    <description>Recent content in Tries on Aaditya</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Aaditya</copyright>
+    <lastBuildDate>Tue, 04 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://aaditya2200.github.io/tags/tries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tries</title>
+      <link>https://aaditya2200.github.io/algorithms/algorithms/tries/</link>
+      <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://aaditya2200.github.io/algorithms/algorithms/tries/</guid>
+      <description>&lt;h2 id=&#34;tries&#34;&gt;Tries&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;When to use?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;To find common prefixes.&lt;/li&gt;&#xA;&lt;li&gt;To verify existence of words within a set of strings&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;In real world systems, tries are used in autocomplete&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-problems&#34;&gt;Types of problems&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Implementation of trie&lt;/li&gt;&#xA;&lt;li&gt;Wildcard search&lt;/li&gt;&#xA;&lt;li&gt;Find all words on a board&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;Please use this &lt;a href=&#34;https://leetcode.com/discuss/general-discussion/853098/trie-or-search-related-question-and-good-explanation&#34;&gt;resource&lt;/a&gt; for practice.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;problems&#34;&gt;Problems&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/implement-trie-prefix-tree&#34;&gt;Trie Implementation&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use a map to store pointers from ch to TrieNode&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improvement&lt;/strong&gt;: use a &lt;code&gt;TrieNode*&lt;/code&gt; array of 26 length. Access each char by subtracting &lt;code&gt;a&lt;/code&gt; from it.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/design-add-and-search-words-data-structure/&#34;&gt;Wildcard Search&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Be careful. The base case for recursion should be when &lt;code&gt;index == word.size()&lt;/code&gt; this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of &lt;code&gt;size - 1&lt;/code&gt; fails. Remember that the root is essentially a dummy node.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/word-search-ii/&#34;&gt;Word Search 2&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This is a bit tricky. The idea is simple, but the implementation is tricky&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leetcode.com/problems/prefix-and-suffix-search/&#34;&gt;Prefix Suffix Search&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Straightforward. Insert all prefixes and suffixed. For example, for &lt;code&gt;apple&lt;/code&gt;, we insert &lt;code&gt;a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple&lt;/code&gt; etc.&lt;/li&gt;&#xA;&lt;li&gt;Maintain index of the word as you encounter them. &lt;code&gt;apple&lt;/code&gt; would have index 0.&lt;/li&gt;&#xA;&lt;li&gt;Maybe dont even need prefix&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

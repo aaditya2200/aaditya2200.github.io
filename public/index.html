@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Aaditya | Home </title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta property="og:image" content=""/>
-	<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Aaditya" />
-	<meta property="og:url" content="http://localhost:1313/">
+	<link rel="alternate" type="application/rss+xml" href="https://aaditya2200.github.io/index.xml" title="Aaditya" />
+	<meta property="og:url" content="https://aaditya2200.github.io/">
   <meta property="og:site_name" content="Aaditya">
   <meta property="og:title" content="About Me">
   <meta property="og:description" content="Hi, I’m Aaditya 👋 (Pronounced Ah-di-ti-ya—but you can call me Aadi if that’s easier!)
@@ -23,13 +23,13 @@ I love building cool things with open-source technologies. My primary interests 
 High-performance databases 🏎️ Leveraging AI for better consumer products 🧠✨ Computer science research in my spare time 📖 Beyond tech, I enjoy skiing and hiking in the mountains near Salt Lake City 🏔️⛷️.
 💡 Looking for New Roles I am currently open to new opportunities! If you have an exciting role that aligns with my interests, feel free to reach out.">
 
-        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+        <link href="https://aaditya2200.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
-		src="http://localhost:1313/js/MathJax.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://aaditya2200.github.io/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://aaditya2200.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css" media="(prefers-color-scheme: dark)"  /><script type="text/javascript"
+		src="https://aaditya2200.github.io/js/MathJax.js"></script>
 		
 		<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -43,9 +43,9 @@ High-performance databases 🏎️ Leveraging AI for better consumer products �
 						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
 			}
 		});
-		</script><link rel="stylesheet" href="http://localhost:1313/katex/katex.min.css ">
-		<script defer src="http://localhost:1313/katex/katex.min.js"></script>
-		<script defer src="http://localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		</script><link rel="stylesheet" href="https://aaditya2200.github.io/katex/katex.min.css ">
+		<script defer src="https://aaditya2200.github.io/katex/katex.min.js"></script>
+		<script defer src="https://aaditya2200.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
@@ -63,7 +63,7 @@ High-performance databases 🏎️ Leveraging AI for better consumer products �
 		<div class="content">
 			<header>
 	<div class="main">
-		<a href="http://localhost:1313/">Aaditya</a>
+		<a href="https://aaditya2200.github.io/">Aaditya</a>
 	</div>
 	<nav>
 		
@@ -86,25 +86,184 @@ High-performance databases 🏎️ Leveraging AI for better consumer products �
 				
 				
 				<section class="list-item">
-					<h1 class="title"><a href="/about/about/about-me/">About Me</a></h1>
+					<h1 class="title"><a href="/algorithms/algorithms/tries/">Tries</a></h1>
+					<time>Feb 4, 2025</time>
+					<br><div class="description">
+	
+	<h2 id="tries">Tries</h2>
+<p><strong>When to use?</strong></p>
+<ol>
+<li>To find common prefixes.</li>
+<li>To verify existence of words within a set of strings</li>
+</ol>
+<p><strong>In real world systems, tries are used in autocomplete</strong>.</p>
+<h2 id="types-of-problems">Types of problems</h2>
+<ol>
+<li>Implementation of trie</li>
+<li>Wildcard search</li>
+<li>Find all words on a board</li>
+</ol>
+<p><strong>Please use this <a href="https://leetcode.com/discuss/general-discussion/853098/trie-or-search-related-question-and-good-explanation">resource</a> for practice.</strong></p>
+<h3 id="problems">Problems</h3>
+<ol>
+<li><a href="https://leetcode.com/problems/implement-trie-prefix-tree">Trie Implementation</a>
+<ul>
+<li>Use a map to store pointers from ch to TrieNode</li>
+<li><strong>Improvement</strong>: use a <code>TrieNode*</code> array of 26 length. Access each char by subtracting <code>a</code> from it.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/">Wildcard Search</a>
+<ul>
+<li>Be careful. The base case for recursion should be when <code>index == word.size()</code> this is because when you start at root, index is 0, and you are searching the next level for character 0. Meaning, for each index, you are searching the next level, and not the current level. That is why the standard string condition of <code>size - 1</code> fails. Remember that the root is essentially a dummy node.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/word-search-ii/">Word Search 2</a>
+<ul>
+<li>This is a bit tricky. The idea is simple, but the implementation is tricky</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/prefix-and-suffix-search/">Prefix Suffix Search</a>
+<ul>
+<li>Straightforward. Insert all prefixes and suffixed. For example, for <code>apple</code>, we insert <code>a#apple, ap#apple, ... apple#apple, #apple, e#apple, le#apple</code> etc.</li>
+<li>Maintain index of the word as you encounter them. <code>apple</code> would have index 0.</li>
+<li>Maybe dont even need prefix</li>
+</ul>
+</li>
+</ol>&hellip;
+	
+</div>
+					<a class="readmore" href="/algorithms/algorithms/tries/">Read more ⟶</a>
+				</section>
+				
+				<section class="list-item">
+					<h1 class="title"><a href="/algorithms/algorithms/prefix-sum/">Prefix Sum</a></h1>
 					<time>Feb 2, 2025</time>
 					<br><div class="description">
 	
-	<h1 id="hi-im-aaditya-">Hi, I&rsquo;m Aaditya 👋</h1>
-<p>(Pronounced <strong>Ah-di-ti-ya</strong>—but you can call me <strong>Aadi</strong> if that&rsquo;s easier!)</p>
-<p>I love <strong>building cool things with open-source technologies</strong>. My primary interests are:</p>
+	<h1 id="what-kind-of-problems">What Kind Of Problems?</h1>
+<ol>
+<li>Sum of ranges.</li>
+<li>Ranges with k-sum.</li>
+<li>Product of all indices except current.</li>
+</ol>
+<p>Refer to <a href="https://leetcode.com/discuss/study-guide/5119937/Prefix-Sum-Problems">resource</a> for practice problems.</p>
+<h2 id="progress">Progress</h2>
+<ol start="4">
+<li><a href="https://leetcode.com/problems/range-sum-query-immutable/description/">303. Range Sum Query - Immutable</a></li>
+<li><a href="https://leetcode.com/problems/subarray-sum-equals-k/description/">560. Subarray Sum Equals K</a>
 <ul>
-<li><strong>High-performance databases</strong> 🏎️</li>
-<li><strong>Leveraging AI for better consumer products</strong> 🧠✨</li>
-<li><strong>Computer science research in my spare time</strong> 📖</li>
+<li>This problem is interesting. We keep track of the frequency of the prefix sums in a map.</li>
 </ul>
-<p>Beyond tech, I enjoy <strong>skiing and hiking</strong> in the mountains near <strong>Salt Lake City</strong> 🏔️⛷️.</p>
-<hr>
-<h2 id="-looking-for-new-roles">💡 Looking for New Roles</h2>
-<p>I am currently <strong>open to new opportunities</strong>! If you have an exciting role that aligns with my interests, feel free to <strong>reach out</strong>.</p>&hellip;
+</li>
+<li><a href="https://leetcode.com/problems/xor-queries-of-a-subarray/">1310. XOR Queries of a Subarray</a>
+<ul>
+<li>This required some thinking, but turns out we can find XOR of a range by taking a prefix array of XORs and computing XOR for the required range indices.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/count-vowel-strings-in-ranges/description/">2559. Count Vowel Strings in Ranges</a>
+<ul>
+<li>This threw me off at first, but after looking at it for a minute, realized it&rsquo;s nothing fancy.</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/">325. Maximum Size Subarray Sum Equals k</a>
+<ul>
+<li><strong>This is a variation of the standard pattern. You store index instead of frequency.</strong></li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/count-number-of-nice-subarrays/description/">1248. Count Number of Nice Subarrays</a>
+<ul>
+<li><strong>Fumbled a little bit here. Found two ways to solve this.</strong>
+<ol>
+<li>Convert the array into 0 and 1 for even and odd.</li>
+<li>Keep track of counts in a map and update when <code>count - k</code> is found.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><a href="https://leetcode.com/problems/binary-subarrays-with-sum/description/">930. Binary Subarrays With Sum</a></li>
+</ol>
+<ul>
+<li>Same as above. However, surprisingly not the fastest in LeetCode.</li>
+</ul>
+<ol start="11">
+<li><a href="https://leetcode.com/problems/count-number-of-bad-pairs/description/">2364. Count Number of Bad Pairs</a></li>
+</ol>
+<ul>
+<li>Need to revisit. The logic is as follows:
+<ol>
+<li>Total pairs is <code>n * (n - 1) / 2</code>.</li>
+<li>For each number in the list, compute <code>i - nums[i]</code>.</li>
+<li>Subtract the map value for this index from total pairs.</li>
+<li>Increment map value.</li>
+</ol>
+</li>
+<li>Why does this work? 🤔</li>
+</ul>
+<ol start="12">
+<li><a href="https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/">1658. Minimum Operations to Reduce X to Zero</a></li>
+</ol>
+<ul>
+<li>This was pretty tough to understand, but once I did, it was relatively straightforward.</li>
+</ul>
+<ol start="13">
+<li><a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/">974. Subarray Sums Divisible by K</a></li>
+</ol>
+<ul>
+<li>This uses the same concept as the basic problem. But, I. need to be careful as to what the question asks for. They didnt ask for subarrays summing to k. They asked for subarrays divisible by k.</li>
+<li>The formula: <code>sum = (((sum + item) % k) + k)%k</code> is important to avoid negative reminders.</li>
+</ul>
+<ol start="14">
+<li><a href="https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/">1497. Check If Array Pairs Are Divisible by k</a></li>
+</ol>
+<ul>
+<li>This was tricky. The classic approach does not seem to work for me. What I did, was store all remainders in a map, and then check if all the remainder pairs have the same count. If they dont, the answer is false.</li>
+<li>If the number of 0 remainders is not even, the answer is false. Why? Well, it&rsquo;s simple. lets say <code>k = 7</code>, and we have two number <code>7</code> and <code>21</code>. If the sum of these 2 numbers is divisible by <code>k</code>, the number of zero remainders is even. Tldr, if there exists one number with the remainder 0, the only way that the sum is divisible by 0 is if another number with remainder 0 exists.</li>
+</ul>
+<ol start="15">
+<li><a href="https://leetcode.com/problems/make-sum-divisible-by-p/description/">1590. Make Sum Divisible by P</a></li>
+</ol>
+<ul>
+<li>This was tricky. The main idea is as follows:
+<ul>
+<li>We find the total sum, and check if it is divisible by p. if it is, return 0.</li>
+<li>Else, we need to find the subarray which sums up to <code>total sum % p</code></li>
+<li>Now, we compute prefix sum. For each element, we find <code>pref % p</code>.</li>
+<li>We need to remove the elements from the array, such that the sum of the subarray is divisible by p. The formula for this is <code>target = (curr - rem + p) % p</code>.</li>
+<li>If found in map, update lengths.</li>
+</ul>
+</li>
+</ul>
+<ol start="16">
+<li><a href="https://leetcode.com/problems/continuous-subarray-sum/">523. Continuous Subarray Sum</a></li>
+</ol>
+<ul>
+<li>I was able to figure this one out. Need to be more careful with respect to if and else condition and updating the map.</li>
+</ul>
+<ol start="17">
+<li><a href="https://leetcode.com/problems/find-the-divisibility-array-of-a-string/description/">2575. Find the Divisibility Array of a String</a></li>
+</ol>
+<ul>
+<li>This was easy. But there is a formula I should use: <code>new_rem = (old_rem * 10 + digit) % m</code></li>
+</ul>
+<ol start="18">
+<li><a href="https://leetcode.com/problems/count-of-interesting-subarrays/description/">2845. Count of Interesting Subarrays</a></li>
+</ol>
+<ul>
+<li>Like 9, first convert to 1 and 0. Then for each num, try to find its complement in the map.</li>
+</ul>
+<ol start="19">
+<li><a href="https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/">1442. Count Triplets That Can Form Two Arrays of Equal XOR</a></li>
+</ol>
+<ul>
+<li>Use this math formula to understand whats going on.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>prefix[i] .... ^ prefix[j-1] = prefix[j] ^ prefix[i]
+</span></span><span style="display:flex;"><span>prefix[j] ..... prefix[k] = prefix[k + 1] ^ prefix[j]
+</span></span><span style="display:flex;"><span>equating both and eliminating prefix[j]
+</span></span></code></pre></div>&hellip;
 	
 </div>
-					<a class="readmore" href="/about/about/about-me/">Read more ⟶</a>
+					<a class="readmore" href="/algorithms/algorithms/prefix-sum/">Read more ⟶</a>
 				</section>
 				
 				
@@ -122,6 +281,8 @@ High-performance databases 🏎️ Leveraging AI for better consumer products �
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
+
+
 
 
 		</div>
